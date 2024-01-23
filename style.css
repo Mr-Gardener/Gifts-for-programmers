@@ -17,17 +17,15 @@ body {
 .container {
     max-width: 80%;
     height: 210px;
-    background: #808080; 
-
+    overflow-x: hidden;
 }
 
-.images {
+.container .images {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 15px;
     margin-bottom: 25px;
     object-fit: cover;
-    width: 100%;
 }
 
 img {
@@ -46,7 +44,7 @@ img {
 }
 
 .scrollbar {
-    width: 12%;
+    width: 22%;
     background: black;
     cursor: grab;
     height: 100%;
@@ -61,11 +59,11 @@ i{
     position: relative;
 }
 
-.container .fas {
+.container > .fas {
     margin: 0;
     padding-top: 3.5px;
-    background: black;
-    color: #F1F4FD;
+    background: rgb(14, 17, 14);
+    color: #eff2f8;
     border: none;
     border-radius: 50%;
     width: 25px;
