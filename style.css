@@ -17,7 +17,7 @@ body {
 .container {
     max-width: 80%;
     height: 210px;
-    overflow-x: hidden;
+
 }
 
 .container .images {
@@ -26,6 +26,7 @@ body {
     gap: 15px;
     margin-bottom: 25px;
     object-fit: cover;
+    overflow-x: hidden;
 }
 
 img {
@@ -59,7 +60,7 @@ i{
     position: relative;
 }
 
-.container > .fas {
+.container > .fab {
     margin: 0;
     padding-top: 3.5px;
     background: rgb(14, 17, 14);
@@ -72,6 +73,12 @@ i{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.container > .fab:hover {
+    background: #808080;
+    opacity: 0.8;
+    cursor: pointer;
 }
 
 .container #prev {
